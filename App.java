@@ -19,11 +19,11 @@ public class App {
             System.out.println(list.toString());
         }
         else if (command.equals("add")) {
-            System.out.println("Add an item: ");
+            System.out.println("Add an item: "); // mógłbyś rozbić l.23 i zawrzeć to co pod elifem w odrębnej funkcji dla przejrzystości
             list.addNewItem(new TodoItem(in.nextLine()));
         }
         else if (command.equals("mark")) {
-            System.out.println("Which one you want to mark: ");
+            System.out.println("Which one you want to mark: "); // mógłbyś zawrzeć linie 26-28 w 1 funkcji dla przejrzystości
             String index = in.nextLine();
             list.mark(index);
         }
